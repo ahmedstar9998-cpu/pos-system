@@ -4,7 +4,9 @@ from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
 
 ROOT=Path(__file__).resolve().parents[1]
-DEFAULT_SQLITE=f"sqlite:///{ROOT/'data'/'shakweer_web.db'}"
+DATA_DIR=ROOT/'data'
+DATA_DIR.mkdir(parents=True, exist_ok=True)
+DEFAULT_SQLITE='sqlite:////tmp/shakweer_web.db'
 DATABASE_URL=os.getenv('DATABASE_URL', DEFAULT_SQLITE)
 connect_args={'check_same_thread':False} if DATABASE_URL.startswith('sqlite') else {'connect_timeout':5}
 engine=create_engine(DATABASE_URL, pool_pre_ping=True, pool_recycle=1800, future=True, connect_args=connect_args)
