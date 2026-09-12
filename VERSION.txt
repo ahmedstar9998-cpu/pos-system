@@ -1,0 +1,18 @@
+SHAKWEER NET Web POS - PRO MAX
+Version: 3.0.0
+
+Includes:
+- POS, barcode/camera scanner, discounts, tax, payment methods
+- Inventory, stock adjustments and stock movement ledger
+- Customers, debts and collections
+- Maintenance tickets, statuses and payments
+- Cashbox ledger and cashier sessions
+- Attendance, clock-in/out, hours and hourly wages
+- Employees, weekly wages and cashier advances with deduction tracking
+- Internet faults with priority/status/resolution tracking
+- Orders with customer, value, priority, due date and status
+- Internet bands with temporary in-app stop/start
+- Reports with date range, print and WhatsApp/Telegram/Email sharing
+- Users, permissions, audit log, settings and SQLite backup
+- SQLite local mode + PostgreSQL-compatible schema foundation
+- Non-destructive database migrations
